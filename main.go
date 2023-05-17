@@ -1,13 +1,13 @@
 package main
 
-import (
-	"github.com/curso-go/teclado"
-)
+import "github.com/curso-go/ejercicios"
 
 func main() {
 	/*num, str := ejercicios.MayorMejorQueCien("20")
 	fmt.Println(num)
-	fmt.Println(str)*/
+	fmt.Println(str)
 
-	teclado.Multiplicacion()
+	teclado.Multiplicacion()*/
+
+	ejercicios.TablaDeNum()
 }
