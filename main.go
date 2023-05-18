@@ -1,13 +1,17 @@
 package main
 
-import "github.com/curso-go/ejercicios"
+import (
+	e "github.com/curso-go/ejer_interfaces"
+	"github.com/curso-go/modelos"
+)
 
 func main() {
-	/*num, str := ejercicios.MayorMejorQueCien("20")
-	fmt.Println(num)
-	fmt.Println(str)
+	elMati := new(modelos.Hombre)
+	e.HumanosRespirando(elMati)
 
-	teclado.Multiplicacion()*/
+	laMaria := new(modelos.Mujer)
+	e.HumanosRespirando(laMaria)
 
-	ejercicios.TablaDeNum()
+	elPepe := new(modelos.Mujer)
+	e.SerVivoEstaVivo(elPepe)
 }

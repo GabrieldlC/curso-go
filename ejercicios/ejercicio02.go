@@ -8,10 +8,10 @@ import (
 )
 
 func TablaDeNum() {
-	fmt.Println("Ingrese su número")
 	scanner := bufio.NewScanner(os.Stdin)
 	var num int
 	var err error
+	fmt.Println("Ingrese su número")
 
 	for {
 		scanner.Scan()
