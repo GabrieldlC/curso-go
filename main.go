@@ -1,17 +1,19 @@
 package main
 
 import (
-	e "github.com/curso-go/ejer_interfaces"
-	"github.com/curso-go/modelos"
+	"fmt"
+
+	"github.com/curso-go/goroutines"
 )
 
 func main() {
-	elMati := new(modelos.Hombre)
-	e.HumanosRespirando(elMati)
+	canal1 := make(chan bool)
 
-	laMaria := new(modelos.Mujer)
-	e.HumanosRespirando(laMaria)
+	go goroutines.MiNombreLentooo("Gabriel de la Cuadra", canal1)
 
-	elPepe := new(modelos.Mujer)
-	e.SerVivoEstaVivo(elPepe)
+	fmt.Println("A ver si escribís más rápido tu nombre")
+	var x string
+	fmt.Scanln(&x)
+
+	<-canal1
 }
