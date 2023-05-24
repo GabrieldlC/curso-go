@@ -1,19 +1,21 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/curso-go/goroutines"
+	"github.com/curso-go/middleware"
 )
 
 func main() {
-	canal1 := make(chan bool)
+	// canal1 := make(chan bool)
 
-	go goroutines.MiNombreLentooo("Gabriel de la Cuadra", canal1)
+	// go goroutines.MiNombreLentooo("El Valen", canal1)
 
-	fmt.Println("A ver si escribís más rápido tu nombre")
-	var x string
-	fmt.Scanln(&x)
+	// fmt.Println("A ver si escribís más rápido tu nombre")
+	// var x string
+	// fmt.Scanln(&x)
 
-	<-canal1
+	// <-canal1
+
+	// webserver.MiWebServer()
+
+	middleware.MiMiddleware()
 }
